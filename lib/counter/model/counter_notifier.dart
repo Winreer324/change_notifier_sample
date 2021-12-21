@@ -10,3 +10,17 @@ class CounterNotifier with ChangeNotifier {
     notifyListeners();
   }
 }
+
+/// если использовать ValueNotifier то нужно указывать начальное значение в конструкторе
+// class CounterNotifier extends ValueNotifier {
+//   int _counter = 0;
+//
+//   CounterNotifier(value) : super(value);
+//
+//   int get counter => _counter;
+//
+//   void increment() {
+//     _counter++;
+//     notifyListeners();
+//   }
+// }
